@@ -4,7 +4,7 @@ Plugin based on https://www.npmjs.com/package/express-actuator[express-actuator]
 
 [source,javascript]
 ----
-const actuator = require("../index")({
+const actuator = require("express-actuator-alt")({
     appName: "Sample Node App",
     baseUrl: `http://localhost:${port}`,
     managementUrl: "/management",
@@ -18,7 +18,7 @@ app.use("/management",actuator)
 ### Options
 
 |===
-| Variable              | Description                                   | Default Value  
+| *Variable*            | *Description*                                 | *Default Value*  
 | appName               | The application name to be published to admin | Unknown
 | adminPollingInterval  | Interval to register on admin in milliseconds | 10000
 | adminUrl              | Admin url                                     | 
