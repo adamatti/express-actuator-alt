@@ -1,0 +1,31 @@
+Plugin based on https://www.npmjs.com/package/express-actuator[express-actuator] to work with https://github.com/codecentric/spring-boot-admin[spring-boot-admin]
+
+### Sample
+
+[source,javascript]
+----
+const actuator = require("../index")({
+    appName: "Sample Node App",
+    baseUrl: `http://localhost:${port}`,
+    managementUrl: "/management",
+    adminUrl: "http://localhost:8080",
+    adminPollingInterval: 1000
+})
+
+app.use("/management",actuator)    
+----
+
+### Options
+
+|===
+| Variable              | Description                                   | Default Value  
+| appName               | The application name to be published to admin | Unknown
+| adminPollingInterval  | Interval to register on admin in milliseconds | 10000
+| adminUrl              | Admin url                                     | 
+| baseUrl               | The app url. Need to be a valid url to be called by admin (external url) | 
+managementUrl           | Metrics subpath. E.g. `/management`           | `/`
+|===
+
+### Next steps
+* Implement more features (e.g. trace?)
+* Get some varibles by default (e.g. baseUrl)

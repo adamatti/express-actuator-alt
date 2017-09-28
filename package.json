@@ -1,0 +1,30 @@
+{
+  "name": "express-actuator-alt",
+  "version": "0.0.1",
+  "description": "A express-actuator alternative",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adamatti/express-actuator-alt.git"
+  },
+  "keywords": [
+    "node",
+    "actuator",
+    "spring",
+    "springboot",
+    "metrics"
+  ],
+  "author": "Marcelo Adamatti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamatti/express-actuator-alt/issues"
+  },
+  "homepage": "https://github.com/adamatti/express-actuator-alt",
+  "dependencies": {
+    "express": "^4.15.5",
+    "fd-diskspace": "^1.0.0",
+    "http-as-promised": "^1.1.0",
+    "lodash": "^4.17.4"
+  }
+}
