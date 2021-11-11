@@ -1,0 +1,6 @@
+builder:
+  build:
+    context: ./
+    dockerfile: codeship/docker/builder/Dockerfile
+    encrypted_args_file: codeship/build_args.encrypted
+  cached: true

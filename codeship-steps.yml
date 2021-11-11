@@ -1,0 +1,6 @@
+- type: serial
+  tag: ^(master|main)  
+  steps:
+    - service: builder
+      name: publish
+      command: "codeship/publish.sh"
