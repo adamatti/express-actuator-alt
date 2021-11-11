@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/adamatti/express-actuator-alt/compare/v0.1.0...v0.1.1) (2021-11-11)
+
+
+### Bug Fixes
+
+* avoid publish GA to npm ([313c7ef](https://github.com/adamatti/express-actuator-alt/commit/313c7effd83514e912f64323b3f9451a4417c32f))
+
 # [0.1.0](https://github.com/adamatti/express-actuator-alt/compare/v0.0.4...v0.1.0) (2021-11-11)
 
 
